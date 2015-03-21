@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>html 2 markdown </title>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/plugin.css"/>
+		<link rel="stylesheet" href="css/app.css"/>
+	</head>
+	<body>
+		<div class="container well ">
+			<form class="form-search">
+				<input type="text" name="url" class="input-xxlarge" style="width: 500px;" value="{{url}}"/>
+				<button type="button" class="btn" onclick="readmarkdown()">read</button>
+			</form>
+		</div>
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="span6">
+					<div id="wmd-button-bar"></div>
+					<textarea  id="wmd-input" class="wmd-input" style="width:98%; height: 30em"  placeholder="Type something…"
+							   name="note">{{content}}</textarea>
+				</div>
+				<div class="span6">
+					<div style="height: 30px;"></div>
+					<div id="wmd-preview" class="wmd-panel wmd-preview"></div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/markdown.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>
